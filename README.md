@@ -5,13 +5,11 @@ value stream mapping is a technique that can be used to represent the value stre
 waste (that is, non-value adding activities in the stream). We talk about various problems that the value
 stream can highlight, as well as suggested strategies for improvement.
  
- ## Viewing the Presentation Locally
+## View the Presentation Locally
  
- Run a local web server:
- ```
- python -m SimpleHTTPServer
- ```
+Run a local web server:
+```
+python -m SimpleHTTPServer
+```
  
- Using a modern browser, navigate to the URL:
-  
- [`http://localhost:8000/`](http://localhost:8000/)
+Using a modern browser, navigate to the URL [`http://localhost:8000/`](http://localhost:8000/)
