@@ -4375,7 +4375,63 @@
                     <h3>Why does it take so long?</h3>
                 </section>
                 <section>
-                    <p>Resource efficiency, Littles law, queues, linked queues</p>
+                    <h3>Single Task Analysis - Data</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>% Busy</th>
+                                <th>Wait Time</th>
+                            </tr>
+                            <tr class="fragment">
+                                <td>0%</td>
+                                <td>0</td>
+                            </tr>
+                            <tr class="fragment">
+                                <td>50%</td>
+                                <td>1</td>
+                            </tr>
+                            <tr class="fragment">
+                                <td>75%</td>
+                                <td>3</td>
+                            </tr>
+                            <tr class="fragment">
+                                <td>90%</td>
+                                <td>9</td>
+                            </tr>
+                            <tr class="fragment">
+                                <td>95%</td>
+                                <td>19</td>
+                            </tr>
+                            <tr class="fragment">
+                                <td>99%</td>
+                                <td>99</td>
+                            </tr>
+                        </thead>
+                    </table>
+                </section>
+                <section>
+                    <h3>Single Task Analysis - Graph</h3>
+                    <img src="images/resource-busy-vs-wait-time.jpg">
+                </section>
+                <section>
+                    <h3>Little's Law</h3>
+                    <p>L = λW</p>
+                    <aside class="notes">
+                        <ul>
+                            <li>L: average # of tasks in system</li>
+                            <li>λ: arrival rate of new tasks</li>
+                            <li>W: average time in system</li>
+                        </ul>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Linked Queues</h3>
+                    <img src="images/value-stream-resource-efficient.png">
+                    <aside class="notes">
+                        <ul>
+                            <li>Long lead time</li>
+                        </ul>
+                    </aside>
                 </section>
             </section>
             <section id="question-three" data-background="images/background-page.jpg">
@@ -4404,6 +4460,7 @@
                     <li><a href="https://www.bl.uk/catalogues/illuminatedmanuscripts/ILLUMIN.ASP?Size=mid&IllID=826">Illumated Manuscript Arundel 155</a> (public domain)</li>
                     <li><a href="https://hakanforss.wordpress.com/2012/09/14/lean-lego-the-red-brick-cancer/">Lean Lego Red Brick Cancer</a></li>
                     <li>Principles of Product Development Flow</li>
+                    <li>The Phoenix Principle</li>
                 </ul>
                 <p>Joe Schmetzer &bullet; <a href="https://twitter.com/tumbarumba">@tumbarumba</a></p>
             </section>
