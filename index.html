@@ -40,6 +40,10 @@
             border: none;
             box-shadow: none;
         }
+        .reveal table.right-align th,
+        .reveal table.right-align td {
+            text-align: right;
+        }
     </style>
 </head>
 <body>
@@ -65,9 +69,15 @@
             <section id="question-one">
                 <section>
                     <h2>Question One</h2>
-                    <h3>How do we make money?</h3>
+                    <h3>What is it we do that's valuable?</h3>
                     <aside class="notes">
                         <p>What is it that we do as a business that allows us to make money?</p>
+                        <ul>
+                            <li>Valuable stuff (design, coding, testing, releasing)</li>
+                            <li>Overheads (ticketing systems, rework)</li>
+                            <li>Wasteful stuff</li>
+                            <li>Hidden stuff</li>
+                        </ul>
                     </aside>
                 </section>
                 <section>
@@ -4380,7 +4390,7 @@
                 </section>
                 <section>
                     <h3>Single Task Analysis - Data</h3>
-                    <table>
+                    <table class="right-align">
                         <thead>
                             <tr>
                                 <th>% Busy</th>
@@ -5450,13 +5460,55 @@
                 </section>
                 <section>
                     <h3>Value Stream Optimisation Strategy</h3>
-                    <p><strong>resource optimisation</strong> vs <strong>flow optimisation</strong></p>
+                    <p><strong>Resource Optimisation</strong> vs <strong>Flow Optimisation</strong></p>
                     <img class="no-border" src="images/value-stream-comparison.png">
+                    <aside class="notes">
+                        <ul>
+                            <li>Compare lead time, % touch time, resource costs</li>
+                            <li>Which is better?
+                                <ul>
+                                    <li>Need an economic model to decide</li>
+                                    <li>What about improvements? Need slack in the system.
+                                        <ul>
+                                            <li>Slack (DeMarco)</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </aside>
                 </section>
                 <section>
-                    <p>Optimising for flow, comparison of streams, cost of delay</p>
-                    <p>The Principles of Product Development Flow - 12 critical problems with the
-                        current product development orthodoxy</p>
+                    <h3>Product Economic Framework</h3>
+                    <p>Standard economic measure:</p>
+                    <h4 style="color: red; font-size: 2em;">Life-Cycle Profits</h4>
+                    <aside class="notes">
+                        <p>which is affected by...</p>
+                        <ul>
+                            <li>product value</li>
+                            <li>product cost</li>
+                            <li>development expense</li>
+                            <li>cycle time</li>
+                            <li>risk</li>
+                        </ul>
+                        <p>Missing metric? Cost of delay!</p>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Cost of Delay</h3>
+                    <p>What happens to life-cycle profits if release is delayed 7 weeks?</p>
+                    <img class="fragment no-border" src="images/value-stream-comparison.png">
+                    <aside class="notes">
+                        <p>Cost of queues:</p>
+                        <ul>
+                            <li>longer cycle time</li>
+                            <li>increased risk</li>
+                            <li>more variability</li>
+                            <li>more overheads</li>
+                            <li>lower quality</li>
+                            <li>less motivation</li>
+                        </ul>
+                    </aside>
                 </section>
             </section>
             <section id="question-four">
@@ -5465,7 +5517,44 @@
                     <h3>How do we change?</h3>
                 </section>
                 <section>
-                    <p>Toyota Kata</p>
+                    <h3>Step 1</h3>
+                    <h4>Agree your economic model</h4>
+                    <ul>
+                        <li>Product value</li>
+                        <li>Product cost</li>
+                        <li>Cycle time</li>
+                        <li>Cost of delay</li>
+                        <li>Development expense</li>
+                        <li>Risk</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Step 2</h3>
+                    <h4>Look at your current value stream</h4>
+                    <aside class="notes">
+                        <p>This is your current-state value stream mapping</p>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Step 3</h3>
+                    <h4>Agree your development strategy</h4>
+                    <aside class="notes">
+                        <p>This is your future-state value stream mapping</p>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Step 4</h3>
+                    <h4>Small incremental changes to realise strategy</h4>
+                    <aside class="notes">
+                        <p>Get help!</p>
+                        <ul>
+                            <li>PEX team</li>
+                            <li>Agile/lean expert group</li>
+                        </ul>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Toyota Kata</h3>
                 </section>
             </section>
             <section id="references">
@@ -5475,6 +5564,7 @@
                     <li>Principles of Product Development Flow</li>
                     <li>The Phoenix Principle</li>
                     <li>Slack</li>
+                    <li>The Toyota Way</li>
                 </ul>
                 <p>Joe Schmetzer &bullet; <a href="https://twitter.com/tumbarumba">@tumbarumba</a></p>
             </section>
