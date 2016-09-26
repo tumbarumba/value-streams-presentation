@@ -66,8 +66,8 @@
                     <p>This talk raises 4 key questions...</p>
                 </aside>
             </section>
-            <section id="question-one">
-                <section>
+            <section>
+                <section id="question-one">
                     <h2>Question One</h2>
                     <h3>What is it we do that's valuable?</h3>
                     <aside class="notes">
@@ -80,7 +80,7 @@
                         </ul>
                     </aside>
                 </section>
-                <section>
+                <section id="a-value-stream">
                     <h3>A Value Stream</h3>
                     <svg
                             xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -532,7 +532,7 @@
                         <p>Lots of different ways of making money, lots of different value streams</p>
                     </aside>
                 </section>
-                <section>
+                <section id="types-of-value-streams">
                     <h3>Types of Value Streams</h3>
                     <svg
                             xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -1603,7 +1603,7 @@
                         </ul>
                     </aside>
                 </section>
-                <section>
+                <section id="value-stream-tasks">
                     <h3>Value Stream Tasks</h3>
                     <svg
                             xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -2114,7 +2114,7 @@
                         </g>
                     </svg>
                 </section>
-                <section>
+                <section id="value-stream-in-detail">
                     <h3>A Value Stream in Detail</h3>
                     <div>
                         <!-- Start of SVG -->
@@ -4374,7 +4374,7 @@
                         </ul>
                     </aside>
                 </section>
-                <section>
+                <section id="value-stream-statistics">
                     <h3>Value Stream Statistics</h3>
                     <ul>
                         <li class="fragment">35 different activities</li>
@@ -4383,12 +4383,12 @@
                     </ul>
                 </section>
             </section>
-            <section id="question-two">
-                <section>
+            <section>
+                <section id="question-two">
                     <h2>Question Two</h2>
                     <h3>Why does it take so long?</h3>
                 </section>
-                <section>
+                <section id="single-task-analysis-data">
                     <h3>Single Task Analysis - Data</h3>
                     <table class="right-align">
                         <thead>
@@ -4423,11 +4423,11 @@
                         </thead>
                     </table>
                 </section>
-                <section>
+                <section id="single-task-analysis-graph">
                     <h3>Single Task Analysis - Graph</h3>
                     <img src="images/resource-busy-vs-wait-time.jpg">
                 </section>
-                <section>
+                <section id="littles-law">
                     <h3>Little's Law</h3>
                     <p><strong>L = λW</strong></p>
                     <p><strong>W = L/λ</strong></p>
@@ -4440,7 +4440,7 @@
                         </ul>
                     </aside>
                 </section>
-                <section>
+                <section id="linked-queues">
                     <h3>Linked Queues</h3>
                     <img class="no-border" src="images/value-stream-resource-efficient.png">
                     <aside class="notes">
@@ -4452,12 +4452,12 @@
                     </aside>
                 </section>
             </section>
-            <section id="question-three">
-                <section>
+            <section>
+                <section id="question-three">
                     <h2>Question Three</h2>
                     <h3>What alternatives are there?</h3>
                 </section>
-                <section>
+                <section id="alternative-value-stream">
                     <h3>An Alternative Value Stream</h3>
                     <div>
                         <svg
@@ -5450,7 +5450,7 @@
                         </svg>
                     </div>
                 </section>
-                <section>
+                <section id="alternative-value-stream-statistics">
                     <h3>Value Stream Statistics</h3>
                     <ul>
                         <li class="fragment">13 different activities</li>
@@ -5458,8 +5458,8 @@
                         <li class="fragment">4 days touch time</li>
                     </ul>
                 </section>
-                <section>
-                    <h3>Value Stream Optimisation Strategy</h3>
+                <section id="value-stream-comparison">
+                    <h3>Comparison of Value Streams</h3>
                     <p><strong>Resource Optimisation</strong> vs <strong>Flow Optimisation</strong></p>
                     <img class="no-border" src="images/value-stream-comparison.png">
                     <aside class="notes">
@@ -5478,7 +5478,7 @@
                         </ul>
                     </aside>
                 </section>
-                <section>
+                <section id="product-economic-framework">
                     <h3>Product Economic Framework</h3>
                     <p>Standard economic measure:</p>
                     <h4 style="color: red; font-size: 2em;">Life-Cycle Profits</h4>
@@ -5494,7 +5494,7 @@
                         <p>Missing metric? Cost of delay!</p>
                     </aside>
                 </section>
-                <section>
+                <section id="cost-of-delay">
                     <h3>Cost of Delay</h3>
                     <p>What happens to life-cycle profits if release is delayed 7 weeks?</p>
                     <img class="fragment no-border" src="images/value-stream-comparison.png">
@@ -5511,13 +5511,17 @@
                     </aside>
                 </section>
             </section>
-            <section id="question-four">
-                <section>
+            <section>
+                <section id="question-four">
                     <h2>Question Four</h2>
                     <h3>How do we change?</h3>
                 </section>
-                <section>
-                    <h3>Step 1</h3>
+                <section id="toyota-kata">
+                    <h3>Toyota Kata</h3>
+                    <img class="no-border" src="images/value-stream-mapping-kata.jpg">
+                </section>
+                <section id="toyota-kata-step-1">
+                    <h3>Step 1: Understand the direction</h3>
                     <h4>Agree your economic model</h4>
                     <ul>
                         <li>Product value</li>
@@ -5528,22 +5532,23 @@
                         <li>Risk</li>
                     </ul>
                 </section>
-                <section>
-                    <h3>Step 2</h3>
+                <section id="toyota-kata-step-2">
+                    <h3>Step 2: Grasp the current condition</h3>
                     <h4>Look at your current value stream</h4>
                     <aside class="notes">
                         <p>This is your current-state value stream mapping</p>
                     </aside>
                 </section>
-                <section>
-                    <h3>Step 3</h3>
-                    <h4>Agree your development strategy</h4>
+                <section id="toyota-kata-step-3">
+                    <h3>Step 3: Establish the next target condition</h3>
+                    <h4>Decide upon the future value stream</h4>
                     <aside class="notes">
                         <p>This is your future-state value stream mapping</p>
+                        <p>Use the economic model to optimise life-cycle profits</p>
                     </aside>
                 </section>
-                <section>
-                    <h3>Step 4</h3>
+                <section id="toyota-kata-step-4">
+                    <h3>Step 4: Conduct experiments to move to the target condition</h3>
                     <h4>Small incremental changes to realise strategy</h4>
                     <aside class="notes">
                         <p>Get help!</p>
@@ -5553,18 +5558,16 @@
                         </ul>
                     </aside>
                 </section>
-                <section>
-                    <h3>Toyota Kata</h3>
-                </section>
             </section>
             <section id="references">
                 <h2>References</h2>
                 <ul>
-                    <li><a href="https://hakanforss.wordpress.com/2012/09/14/lean-lego-the-red-brick-cancer/">Lean Lego Red Brick Cancer</a></li>
-                    <li>Principles of Product Development Flow</li>
-                    <li>The Phoenix Principle</li>
-                    <li>Slack</li>
-                    <li>The Toyota Way</li>
+                    <li><a href="https://hakanforss.wordpress.com/2012/09/14/lean-lego-the-red-brick-cancer/">Lean Lego - The Red Brick Cancer</a>, by Håkan Forss</li>
+                    <li><a href="https://www.amazon.co.uk/Principles-Product-Development-Flow-Generation-ebook/dp/B007TKU0O0">Principles of Product Development Flow</a>, by Donald G. Reinersten</li>
+                    <li><a href="https://www.amazon.co.uk/Phoenix-Project-DevOps-Helping-Business-ebook/dp/B00AZRBLHO">The Phoenix Project</a>, by Gene Kim, Kevin Behr and George Spafford</li>
+                    <li><a href="https://www.amazon.co.uk/Slack-Getting-Burnout-Busywork-Efficiency-ebook/dp/B004SOVC2Y">Slack: Getting Past Burnout, Busywork, and the Myth of Total Efficiency</a>, by Tom DeMarco</li>
+                    <li><a href="https://www.amazon.co.uk/Toyota-Way-Management-Principles-Manufacturer/dp/0071392319">The Toyota Way</a>, by Jeffrey K. Liker</li>
+                    <li><a href="http://www-personal.umich.edu/~mrother/VSM.html">Value Stream Mapping</a>, by Mike Rother</li>
                 </ul>
                 <p>Joe Schmetzer &bullet; <a href="https://twitter.com/tumbarumba">@tumbarumba</a></p>
             </section>
