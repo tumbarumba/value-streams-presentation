@@ -1600,6 +1600,8 @@
                                     <li>Creates and updates the software systems</li>
                                 </ul>
                             </li>
+                            <li>Story: floor sweeper at NASA. Exec asks "what are you doing?" A: "I'm helping get a man on the moon"</li>
+                            <li>Alignment to value streams is important - agile working</li>
                         </ul>
                     </aside>
                 </section>
@@ -4369,8 +4371,10 @@
                     </div>
                     <aside class="notes">
                         <ul>
+                            <li>GED team - investment bank</li>
                             <li>Let's track the journey of a new valuable software capability through all the steps of a value stream</li>
                             <li>Start at the point where the development team first picks up the previously prioritised work</li>
+                            <li>Things that happen after go-live: user training & roll out, feature toggle</li>
                         </ul>
                     </aside>
                 </section>
@@ -5449,6 +5453,11 @@
                             </g>
                         </svg>
                     </div>
+                    <aside class="notes">
+                        <li>Software Engineering Strategy - continuous delivery</li>
+                        <li>Release every week!</li>
+                        <li>Biggest gains in automating release overheads</li>
+                    </aside>
                 </section>
                 <section id="alternative-value-stream-statistics">
                     <h3>Value Stream Statistics</h3>
@@ -5462,19 +5471,23 @@
                     <h3>Comparison of Value Streams</h3>
                     <p><strong>Resource Optimisation</strong> vs <strong>Flow Optimisation</strong></p>
                     <img class="no-border" src="images/value-stream-comparison.png">
+                    <div style="float: left; width: 45%;">
+                        <ul>
+                            <li>43 days lead time</li>
+                            <li>7 days touch time</li>
+                        </ul>
+                    </div>
+                    <div style="float: right; width: 45%;">
+                        <ul>
+                            <li>5 days lead time</li>
+                            <li>4 days touch time</li>
+                        </ul>
+                    </div>
                     <aside class="notes">
                         <ul>
                             <li>Compare lead time, % touch time, resource costs</li>
-                            <li>Which is better?
-                                <ul>
-                                    <li>Need an economic model to decide</li>
-                                    <li>What about improvements? Need slack in the system.
-                                        <ul>
-                                            <li>Slack (DeMarco)</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
+                            <li>Flow optimised value stream depends upon having slack (book by Tom DeMarco)</li>
+                            <li>Which is better? Need an economic model to decide</li>
                         </ul>
                     </aside>
                 </section>
@@ -5516,47 +5529,69 @@
                     <h2>Question Four</h2>
                     <h3>How do we change?</h3>
                 </section>
-                <section id="toyota-kata">
-                    <h3>Toyota Kata</h3>
-                    <img class="no-border" src="images/value-stream-mapping-kata.jpg">
-                </section>
-                <section id="toyota-kata-step-1">
-                    <h3>Step 1: Understand the direction</h3>
-                    <h4>Agree your economic model</h4>
+                <section id="measure">
+                    <h3>Step 1: Measure</h3>
                     <ul>
-                        <li>Product value</li>
-                        <li>Product cost</li>
-                        <li>Cycle time</li>
-                        <li>Cost of delay</li>
-                        <li>Development expense</li>
-                        <li>Risk</li>
+                        <li class="fragment">Life-cycle profits delivered</li>
+                        <li class="fragment">Lead time</li>
+                        <li class="fragment">Size of backlog</li>
+                        <li class="fragment">Work in progress</li>
+                        <li class="fragment">Velocity</li>
+                        <li class="fragment">... whatever is relevant to you</li>
                     </ul>
-                </section>
-                <section id="toyota-kata-step-2">
-                    <h3>Step 2: Grasp the current condition</h3>
-                    <h4>Look at your current value stream</h4>
                     <aside class="notes">
-                        <p>This is your current-state value stream mapping</p>
-                    </aside>
-                </section>
-                <section id="toyota-kata-step-3">
-                    <h3>Step 3: Establish the next target condition</h3>
-                    <h4>Decide upon the future value stream</h4>
-                    <aside class="notes">
-                        <p>This is your future-state value stream mapping</p>
-                        <p>Use the economic model to optimise life-cycle profits</p>
-                    </aside>
-                </section>
-                <section id="toyota-kata-step-4">
-                    <h3>Step 4: Conduct experiments to move to the target condition</h3>
-                    <h4>Small incremental changes to realise strategy</h4>
-                    <aside class="notes">
-                        <p>Get help!</p>
                         <ul>
-                            <li>PEX team</li>
-                            <li>Agile/lean expert group</li>
+                            <li>Peter Drucker: If you can't measure it, you can't manage it</li>
+                            <li>Profits delivered only direct measure
+                                <ul>
+                                    <li>...but it needs an clear economic model</li>
+                                </ul>
+                            </li>
+                            <li>All others "proxy" measures</li>
+                            <li>Velocity easy to measure, but also easy to game</li>
                         </ul>
                     </aside>
+                </section>
+                <section id="current-state">
+                    <h3>Step 2: Visualise the current value stream</h3>
+                    <img class="no-border fragment" src="images/value-stream-resource-efficient.png">
+                    <aside class="notes">
+                        <ul>
+                            <li>Get a facilitator (e.g. me)</li>
+                        </ul>
+                    </aside>
+                </section>
+                <section id="future-state">
+                    <h3>Step 3: Plan an updated value stream</h3>
+                    <img class="no-border fragment" src="images/value-stream-comparison.png">
+                    <aside class="notes">
+                        <ul>
+                            <li>This requires slack! Impossible without it</li>
+                            <li>Whole team planning - mutual learning model</li>
+                            <li>Use the economic model to help</li>
+                        </ul>
+                    </aside>
+                </section>
+                <section id="iterate-experiments">
+                    <h3>Step 4: Small, incremental experiments</h3>
+                    <img class="no-border" style="zoom: 0.75;" src="images/flask.png">
+                </section>
+                <section id="toyota-improvement-kata">
+                    <h3>Toyota Improvement Kata</h3>
+                    <img class="no-border" src="images/improvement-kata.jpg">
+                </section>
+                <section id="toyota-improvement-kata-with-value-streams">
+                    <h3>Improvement Kata with Value Streams</h3>
+                    <img class="no-border" src="images/value-stream-mapping-kata.jpg">
+                </section>
+                <section id="support">
+                    <h3>Do you need support?</h3>
+                    <ul>
+                        <li>Get help if required</li>
+                        <li>Self-help</li>
+                        <li>Agile Working Group - Mark Parris, me</li>
+                        <li>PEX - Rob Garner</li>
+                    </ul>
                 </section>
             </section>
             <section id="references">
@@ -5568,6 +5603,7 @@
                     <li><a href="https://www.amazon.co.uk/Slack-Getting-Burnout-Busywork-Efficiency-ebook/dp/B004SOVC2Y">Slack: Getting Past Burnout, Busywork, and the Myth of Total Efficiency</a>, by Tom DeMarco</li>
                     <li><a href="https://www.amazon.co.uk/Toyota-Way-Management-Principles-Manufacturer/dp/0071392319">The Toyota Way</a>, by Jeffrey K. Liker</li>
                     <li><a href="http://www-personal.umich.edu/~mrother/VSM.html">Value Stream Mapping</a>, by Mike Rother</li>
+                    <li><a href="https://books.gojko.net/specification-by-example/">Specification by Example</a>, by Gojko Adzic</li>
                 </ul>
                 <p>Joe Schmetzer &bullet; <a href="https://twitter.com/tumbarumba">@tumbarumba</a></p>
             </section>
