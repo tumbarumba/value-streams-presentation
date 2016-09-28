@@ -13,3 +13,15 @@ python -m SimpleHTTPServer
 ```
  
 Using a modern browser, navigate to the URL [`http://localhost:8000/`](http://localhost:8000/)
+
+## Acknowledgements
+
+The material in this presentation is based upon a lot of published material, both
+online and in books. The references slide (the last slide in the presentation) has
+links. In addition, the following people have given feedback to help
+improve this the structure and impact of this talk:
+* Andrew Parker
+* Rob Garner
+* Pete Suggitt
+* Will Rothwell
+* Laurie Young
