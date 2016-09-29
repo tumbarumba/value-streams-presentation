@@ -4,16 +4,9 @@ It can be hard to understand why software takes so long to build and deliver. Th
 value stream mapping is a technique that can be used to represent the value stream, and to highlight the
 waste (that is, non-value adding activities in the stream). We talk about various problems that the value
 stream can highlight, as well as suggested strategies for improvement.
- 
-## View the Presentation Locally
- 
-Run a local web server:
-```
-python -m SimpleHTTPServer
-```
- 
-Using a modern browser, navigate to the URL [`http://localhost:8000/`](http://localhost:8000/)
 
+View the presentation online at [`https://tumbarumba.github.io/value-streams-presentation/`](https://tumbarumba.github.io/value-streams-presentation/)
+ 
 ## Acknowledgements
 
 The material in this presentation is based upon a lot of published material, both
