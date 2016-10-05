@@ -5,14 +5,16 @@ value stream mapping is a technique that can be used to represent the value stre
 waste (that is, non-value adding activities in the stream). We talk about various problems that the value
 stream can highlight, as well as suggested strategies for improvement.
  
-## View the Presentation Locally
+The presentation can be viewed online at 
+[https://tumbarumba.github.io/value-streams-presentation/](https://tumbarumba.github.io/value-streams-presentation/).
  
-Run a local web server:
-```
-python -m SimpleHTTPServer
-```
- 
-Using a modern browser, navigate to the URL [`http://localhost:8000/`](http://localhost:8000/)
+Note that this presentation has been built using [reveal.js](http://lab.hakim.se/reveal-js/), which means
+all the usual reveal.js keybindings will work, including:
+* `<space>`: advance to the next slide
+* `<arrow key>`: navigate backwards (or forwards)
+* `<esc>`: show slide overview
+* `S`: show speaker notes (there's a lot of extra information in these notes)
+
 
 ## Acknowledgements
 
