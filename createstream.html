@@ -36,10 +36,24 @@
             color: #f41100;
             list-style: none;
         }
-
+        .reveal section img.no-border {
+            border: none;
+            box-shadow: none;
+        }
         .reveal .slides img.example {
             max-width: 75%;
             max-height: 75%;
+        }
+        .reveal .slides section .reference {
+            font-size: 0.5em;
+            color: #bbb;
+        }
+        .reveal .slides section .reference a {
+            color: #bbf;
+        }
+        .reveal .slides section .big-red {
+            color: red;
+            font-size: 1.5em;
         }
     </style>
 </head>
@@ -104,8 +118,49 @@
                 <li class="fragment">What about queues? Add them in!</li>
             </ul>
         </section>
-        <section id="example">
+        <section id="effort-analysis">
+            <h3>Effort Analysis</h3>
+            <img class="example" src="images/analysis-spreadsheet.png">
+        </section>
+        <section id="big-visible-value-stream">
+            <h3>Big Visible Value Stream</h3>
             <img class="example" src="images/example-value-stream.jpg">
+        </section>
+        <section id="cost-of-delay">
+            <h3>Waste, Inefficiencies, Delays?</h3>
+            <img class="no-border" src="images/value-stream-resource-efficient.png">
+        </section>
+        <section id="driving-improvements">
+            <h3>Driving Improvements</h3>
+            <ol>
+                <li class="fragment">Metrics?</li>
+                <li class="fragment">Vision?</li>
+                <li class="fragment">Experiments</li>
+            </ol>
+        </section>
+        <section id="self-funding">
+            <h3>Improvements can Fund Themselves!</h3>
+            <ul>
+                <li class="fragment">Standard economic measure:
+                    <ul>
+                        <li class="big-red">Life-Cycle Profits</li>
+                    </ul>
+                </li>
+                <li class="fragment">Economic model:
+                    <ul>
+                        <li>product value</li>
+                        <li>product cost</li>
+                        <li>development expense</li>
+                        <li>cycle time</li>
+                        <li>risk</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section id="toyota-improvement-kata">
+            <h3>Toyota Improvement Kata</h3>
+            <img class="no-border" src="images/improvement-kata.jpg">
+            <p class="reference"><sup>*</sup>Image from <a href="http://www-personal.umich.edu/~mrother/The_Improvement_Kata.html">The Improvement Kata</a>, by Mike Rother</p>
         </section>
     </div>
 </div>
