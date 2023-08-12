@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Optimising Delivery with Value Streams</title>
+    <title>Discovering your Value Stream</title>
 
     <meta name="description" content="When we we get our stuff? Why does it take so long? This is a talk about how value streams and lean theory can help understand bottlenecks and improve flow in software development">
     <meta name="author" content="Joe Schmetzer">
@@ -10,11 +10,12 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-    <link rel="stylesheet" href="reveal.js/css/reveal.css">
-    <link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
+    <link rel="stylesheet" href="reveal.js/dist/reset.css">
+    <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="reveal.js/dist/theme/simple.css">
 
-    <!-- Code syntax highlighting -->
-    <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css">    
 
     <!-- Printing and PDF exports -->
     <script>
@@ -30,19 +31,19 @@
     <![endif]-->
 
     <style type="text/css">
-        .reveal .slides ul.question {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #f41100;
-            list-style: none;
+        .reveal .slides section svg .fragment.current-fragment .visible-when-current {
+            visibility: visible;
+        }
+        .reveal .slides section svg .fragment .visible-when-current {
+            visibility: hidden;
         }
         .reveal section img.no-border {
             border: none;
             box-shadow: none;
         }
-        .reveal .slides img.example {
-            max-width: 75%;
-            max-height: 75%;
+        .reveal table.right-align th,
+        .reveal table.right-align td {
+            text-align: right;
         }
         .reveal .slides section .reference {
             font-size: 0.5em;
@@ -51,140 +52,129 @@
         .reveal .slides section .reference a {
             color: #bbf;
         }
-        .reveal .slides section .big-red {
-            color: red;
-            font-size: 1.5em;
-        }
     </style>
 </head>
 <body>
-<div class="reveal">
-    <div class="slides">
-        <section id="title">
-            <h2>Let's Build a<br>
-                Value Stream</h2>
-            <p>Joe Schmetzer &bullet; <a href="https://twitter.com/tumbarumba">@tumbarumba</a></p>
-        </section>
-        <section id="form-groups">
-            <h3>Form Groups</h3>
-            <ul>
-                <li class="fragment">Split into groups of no more than 6 people</li>
-                <li class="fragment">Warm up: Introduce yourselves!
-                    <ul>
-                        <li class="fragment">What do you do?</li>
-                        <li class="fragment">What are your hobbies, interests?</li>
-                        <li class="fragment">Something unusual about yourself?</li>
-                        <li class="fragment">3 minutes!</li>
-                    </ul>
-                </li>
-                <li class="fragment">Decide/elect a value stream expert
-                    <ul>
-                        <li class="fragment">1 minute!</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-        <section id="build">
-            <h3>Build the Value Stream</h3>
-            <ul>
-                <li class="fragment">Name the stream (e.g. Add a Feature to Geronimo)</li>
-                <li class="fragment">Start at the end (what is the value?)</li>
-                <li class="fragment">Start a loop:
-                    <ul>
-                        <li class="fragment">Ask the question:
-                            <ul class="question">
-                                <li class="fragment">What must happen to allow this?</li>
-                            </ul>
-                        </li>
-                        <li class="fragment">Write that down on a card</li>
-                        <li class="fragment">Repeat</li>
-                    </ul>
-                </li>
-                <li class="fragment">20 minutes!</li>
-            </ul>
-        </section>
-        <section id="review">
-            <h3>Review</h3>
-            <ul>
-                <li class="fragment">What's missing?</li>
-                <li class="fragment">For each card:
-                    <ul>
-                        <li class="fragment">How many people?</li>
-                        <li class="fragment">What roles?</li>
-                        <li class="fragment">How long?</li>
-                        <li class="fragment">It is value add or overhead?</li>
-                    </ul>
-                </li>
-                <li class="fragment">What about queues? Add them in!</li>
-            </ul>
-        </section>
-        <section id="effort-analysis">
-            <h3>Effort Analysis</h3>
-            <img class="example" src="images/analysis-spreadsheet.png">
-        </section>
-        <section id="big-visible-value-stream">
-            <h3>Big Visible Value Stream</h3>
-            <img class="example" src="images/example-value-stream.jpg">
-        </section>
-        <section id="cost-of-delay">
-            <h3>Waste, Inefficiencies, Delays?</h3>
-            <img class="no-border" src="images/value-stream-resource-efficient.png">
-        </section>
-        <section id="driving-improvements">
-            <h3>Driving Improvements</h3>
-            <ol>
-                <li class="fragment">Metrics?</li>
-                <li class="fragment">Vision?</li>
-                <li class="fragment">Experiments</li>
-            </ol>
-        </section>
-        <section id="self-funding">
-            <h3>Improvements can Fund Themselves!</h3>
-            <ul>
-                <li class="fragment">Standard economic measure:
-                    <ul>
-                        <li class="big-red">Life-Cycle Profits</li>
-                    </ul>
-                </li>
-                <li class="fragment">Economic model:
-                    <ul>
-                        <li>product value</li>
-                        <li>product cost</li>
-                        <li>development expense</li>
-                        <li>cycle time</li>
-                        <li>risk</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-        <section id="toyota-improvement-kata">
-            <h3>Toyota Improvement Kata</h3>
-            <img class="no-border" src="images/improvement-kata.jpg">
-            <p class="reference"><sup>*</sup>Image from <a href="http://www-personal.umich.edu/~mrother/The_Improvement_Kata.html">The Improvement Kata</a>, by Mike Rother</p>
-        </section>
+    <div class="reveal">
+        <div class="slides">
+            <section id="title">
+                <h2>Let's Build a<br>
+                    Value Stream</h2>
+                <p>Joe Schmetzer &bullet; <a href="https://twitter.com/tumbarumba">@tumbarumba</a></p>
+            </section>
+            <section id="form-groups">
+                <h3>Form Groups</h3>
+                <ul>
+                    <li class="fragment">Split into groups of no more than 6 people</li>
+                    <li class="fragment">Warm up: Introduce yourselves!
+                        <ul>
+                            <li class="fragment">What do you do?</li>
+                            <li class="fragment">What are your hobbies, interests?</li>
+                            <li class="fragment">Something unusual about yourself?</li>
+                            <li class="fragment">3 minutes!</li>
+                        </ul>
+                    </li>
+                    <li class="fragment">Decide/elect a value stream expert
+                        <ul>
+                            <li class="fragment">1 minute!</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section id="build">
+                <h3>Build the Value Stream</h3>
+                <ul>
+                    <li class="fragment">Name the stream (e.g. Add a Feature to Geronimo)</li>
+                    <li class="fragment">Start at the end (what is the value?)</li>
+                    <li class="fragment">Start a loop:
+                        <ul>
+                            <li class="fragment">Ask the question:
+                                <ul class="question">
+                                    <li class="fragment">What must happen to allow this?</li>
+                                </ul>
+                            </li>
+                            <li class="fragment">Write that down on a card</li>
+                            <li class="fragment">Repeat</li>
+                        </ul>
+                    </li>
+                    <li class="fragment">20 minutes!</li>
+                </ul>
+            </section>
+            <section id="review">
+                <h3>Review</h3>
+                <ul>
+                    <li class="fragment">What's missing?</li>
+                    <li class="fragment">For each card:
+                        <ul>
+                            <li class="fragment">How many people?</li>
+                            <li class="fragment">What roles?</li>
+                            <li class="fragment">How long?</li>
+                            <li class="fragment">It is value add or overhead?</li>
+                        </ul>
+                    </li>
+                    <li class="fragment">What about queues? Add them in!</li>
+                </ul>
+            </section>
+            <section id="effort-analysis">
+                <h3>Effort Analysis</h3>
+                <img class="example" src="images/analysis-spreadsheet.png">
+            </section>
+            <section id="big-visible-value-stream">
+                <h3>Big Visible Value Stream</h3>
+                <img class="example" src="images/example-value-stream.jpg">
+            </section>
+            <section id="cost-of-delay">
+                <h3>Waste, Inefficiencies, Delays?</h3>
+                <img class="no-border" src="images/value-stream-resource-efficient.png">
+            </section>
+            <section id="driving-improvements">
+                <h3>Driving Improvements</h3>
+                <ol>
+                    <li class="fragment">Metrics?</li>
+                    <li class="fragment">Vision?</li>
+                    <li class="fragment">Experiments</li>
+                </ol>
+            </section>
+            <section id="self-funding">
+                <h3>Improvements can Fund Themselves!</h3>
+                <ul>
+                    <li class="fragment">Standard economic measure:
+                        <ul>
+                            <li class="big-red">Life-Cycle Profits</li>
+                        </ul>
+                    </li>
+                    <li class="fragment">Economic model:
+                        <ul>
+                            <li>product value</li>
+                            <li>product cost</li>
+                            <li>development expense</li>
+                            <li>cycle time</li>
+                            <li>risk</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section id="toyota-improvement-kata">
+                <h3>Toyota Improvement Kata</h3>
+                <img class="no-border" src="images/improvement-kata.jpg">
+                <p class="reference"><sup>*</sup>Image from <a href="http://www-personal.umich.edu/~mrother/The_Improvement_Kata.html">The Improvement Kata</a>, by Mike Rother</p>
+            </section>
+        </div>
     </div>
-</div>
-<script src="reveal.js/lib/js/head.min.js"></script>
-<script src="reveal.js/js/reveal.js"></script>
-<script>
-    Reveal.initialize({
-        controls: true,
-        progress: true,
-        history: true,
-        center: true,
+        <script src="reveal.js/dist/reveal.js"></script>
+    <script src="reveal.js/plugin/notes/notes.js"></script>
+    <script src="reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="reveal.js/plugin/highlight/highlight.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
 
-        transition: 'fade',
-        backgroundTransition: 'fade',
-
-        // Optional reveal.js plugins
-        dependencies: [
-            { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-            { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-            { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-            { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
-            { src: 'reveal.js/plugin/notes/notes.js', async: true }
-        ]
-    });
-</script>
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+        });
+    </script>
 </body>
 </html>
